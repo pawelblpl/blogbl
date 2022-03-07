@@ -1,2 +1,2 @@
 # blogbl
-Blog internetowy
+Blog
