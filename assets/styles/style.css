@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+    color: #3d3d3d;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+/* INSTALL */
+.red {
+    color: red;
+}
+
+/* LOGIN */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.login-input {
+    padding: 8px;
+    background-color: #ecf0f1;
+    border: 0;
+    border-radius: 10px;
+    margin: 7% auto;
+}
+
+.login-submit {
+    background-color: #3ae374;
+    color:white;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.login-submit:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu-logo {
+}
+
+.menu-logo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10% auto;
+}
+
+.menu-logo-img:hover {
+    opacity: 0.7;
+}
+
+.menu-nav {
+    margin: 2% 0;
+}
+
+.menu-nav-link {
+    margin: auto 15px;
+    color: #ffb8b8;
+}
+
+.menu-nav-link:hover {
+    color: #7d5fff;
+}
+
+/* MAIN */
+.main {
+    margin: 3% 5% 0 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+@media only screen and (min-width: 602px){
+    .box {
+        max-width: 45%;
+    }
+}
+
+.box-title {
+    border-bottom: 1px solid #ffcccc;
+}
+
+.box-date {
+    border-top: 1px solid #ffcccc;
+    text-align: right;
+}
+
+.box-content {
+    word-break: break-word;
+}
+
+.box-contact {
+    min-width: 60%;
+}
+
+.box-content-contact {
+    line-height: 2;
+}
+
+/* FOOTER */
+.footer {
+    /*background-color: white;*/
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px){
+    .footer {
+        position: fixed;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .footer {
+        position: relative;
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-user-link {
+    color: #3ae374;
+}
+
+.footer-user-link:hover {
+    color: #7d5fff;
+}
+
+/* ADMIN PANEL */
+.panel {
+    display: flex;
+}
+
+.panel-menu {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    text-align: right;
+}
+
+.panel-menu-link {
+    padding: 8px;
+    color: #3ae374;
+}
+
+.panel-menu-link:hover {
+    background-color: #ecf0f1;
+}
+
+.active {
+    background-color: #ecf0f1;
+}
+
+.panel-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-content-content {
+    width: 70%;
+}
+
+.panel-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-input {
+    padding: 8px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.panel-textarea {
+    padding: 8px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    resize: vertical;
+    min-height: 30vh;
+    margin-bottom: 5%;
+}
+
+.panel-textarea:focus {
+    outline-style: none;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+.article-form {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px 0;
+    align-items: center;
+}
+
+.article-input-delete {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.article-input-delete:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-img {
+    width: 170px;
+    height: 170px;
+    margin: 2%;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.portfolio-img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.upload-img {
+    padding: 8px;
+}
+
+input[type="file" i] {
+    padding: 8px;
+}
+
+.portfolio-form {
+    text-align: center;
+}
