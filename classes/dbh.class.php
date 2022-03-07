@@ -7,6 +7,7 @@ class Dbh {
             $pdo = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbusername, $dbpassword);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $config = '<?php $db = array("dbhost" => "'.$dbhost.'", "dbusername" => "'.$dbusername.'", "dbname" => "'.$dbname.'", "dbpassword" => "'.$dbpassword.'"); ?>';
+            mkdir('./config', 0777, true);
             $file = fopen("./config/config.php","wb");
             fwrite($file, $config);
             fclose($file);
